@@ -105,6 +105,7 @@ class UserPasswordResetSerializer(serializers.Serializer):
   
   def validate(self,attrs):
     try:
+      # done
       password=attrs.get('password')
       password2=attrs.get('password2')
       uid=self.context.get('uid')
