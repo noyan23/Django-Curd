@@ -97,3 +97,7 @@ class UserPasswordResetView(APIView):
            return Response({'msg':'Password Reset Sucessfully'},status=status.HTTP_200_OK)
 
         return Response(serializer.errors,status=status.HTTP_404_BAD_REQUEST)
+
+
+class HostView(APIView):
+    pass
